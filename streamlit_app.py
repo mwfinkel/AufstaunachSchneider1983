@@ -5,7 +5,7 @@
 
 import streamlit as st
 import numpy as np
-import matplotlib as plt
+import matplotlib.pyplot as plt
 import math
 
 st.set_page_config(page_title="Aufstau nach Schneider", layout="wide")
@@ -56,7 +56,7 @@ st.metric("Maximaler Aufstau", f"{Dh_um_max:.1f} cm")
 max_level = round(Dh_um_max/10)*10
 
 # Plot
-fig, ax = plt.pyplot.subplots(figsize=(10, 6))
+fig, ax = plt.subplots(figsize=(10, 6))
 contour = ax.contour(X, Y, Dh_um*100, [-30, -20, -10, -7.5, -5, -2.5, 0, 2.5, 5, 7.5, 10, 20, 30], linewidths=2, colors='blue')
 ax.clabel(contour, inline=True, fontsize=8)
 ax.set_title("Aufstauverteilung nach Schneider 1983")
