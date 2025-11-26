@@ -8,7 +8,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import math
 
-st.set_page_config(page_title="Aufstau nach Schneider", layout="wide")
+st.set_page_config(page_title="Aufstau und Absenkung nach Schneider (1983)", layout="wide")
 
 st.markdown("""
     <style>
@@ -19,8 +19,8 @@ st.markdown("""
     </style>
 """, unsafe_allow_html=True)
 
-st.title("Aufstau nach Schneider (1983)")
-st.header("Visualisierung des Grundwasseraufstaus nach Gleichung (1) aus Schneider 1983.")
+st.title("Grundwasseraufstau und -absenkung nach Schneider (1983)")
+st.header("Linienförmiges Bauwerk, reine Umströmung (Gl. 1 in Schneider 1983)")
 
 
 # Eingabeparameter
